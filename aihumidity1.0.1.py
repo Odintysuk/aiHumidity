@@ -5,6 +5,9 @@
 
 v.1.0.1
 
+Используемые версии библиотек:
+KivyMD == 2.0.1.dev0
+
 """
 
 import pandas as pd
@@ -33,7 +36,6 @@ KV = ("""
         md_bg_color: '5b6c73'
         adaptive_size: False
         size_hint: 1, .2
-        id: box_label
         orientation: 'horizontal'
         pos: 0, root.height - root.height/5
         
@@ -51,10 +53,8 @@ KV = ("""
         
     MDBoxLayout:
         id: box
-        # md_bg_color: self.theme_cls.backgroundColor
         adaptive_size: True
         size_hint: 1, .8
-        # pos: 0, self.height - self.height/1.5
         orientation: 'vertical'
         padding: 30
         spacing: 20
